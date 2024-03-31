@@ -1,15 +1,16 @@
 // helper.js
+
 // findMatching function
 function findMatching(drivers, query) {
   return drivers.filter(driver =>
-    driver.name.toLowerCase() === query.toLowerCase()
+    driver.toLowerCase() === query.toLowerCase()
   );
 }
 
 // fuzzyMatch function
 function fuzzyMatch(drivers, query) {
   return drivers.filter(driver =>
-    driver.name.toLowerCase().startsWith(query.toLowerCase())
+    driver.toLowerCase().startsWith(query.toLowerCase())
   );
 }
 
